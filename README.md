@@ -5,7 +5,7 @@
 
 # Release
 
-Go to release and download the build release for your OS. If you would like to build it yourself or modify it in any way, download the source code.
+Go to [Releases](https://github.com/DustinWatts/FreeTouchDeck-Helper/releases) and download the build release for your OS. If you would like to build it yourself or modify it in any way, download the source code.
 
 # Dependecies
 
