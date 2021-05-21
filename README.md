@@ -1,9 +1,11 @@
 # FreeTouchDeck-Helper
  A simple app (Windows, MacOS, Linux) that gives shell access to your FreeTouchDeck. This app is written in Electron. 
 
+ ![](Images/FreeTouchDeck-Helper.png)
+
 # Release
 
-Go to release and download the build release for you OS. If you would like to build it yourself or modify it in any way, download the source code.
+Go to release and download the build release for your OS. If you would like to build it yourself or modify it in any way, download the source code.
 
 # Dependecies
 
@@ -23,4 +25,4 @@ MacOs `npm run package-mac`
 
 Linux `npm run package-linux`
 
-You will find you builds in the 'FreeTouchDeck-Helper/release-builds'.
+You will find your builds in the 'FreeTouchDeck-Helper/release-builds'.
