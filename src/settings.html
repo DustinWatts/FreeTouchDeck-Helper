@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/settings.css" rel="stylesheet" />
+    <title>Settings</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="empty_div"></div>
+      <span class="header_settings">Settings</span>
+      <div class="main">
+          <span class="textheader">Modifiers</span><br><br>
+          <form>
+            Modifier 1:&nbsp;&nbsp;&nbsp;<select class="selectbox" id="modifier1" name="modifier1">
+                <option value=""></option>
+                <option value="Alt">Alt</option>
+                <option value="Shift">Shift</option>
+                <option value="Ctrl">Ctrl</option>
+                <option value="Super">GUI</option>
+              </select><br><br>
+              Modifier 2:&nbsp;&nbsp;&nbsp;<select class="selectbox" id="modifier2" name="modifier2">
+                <option value=""></option>
+                <option value="Alt">Alt</option>
+                <option value="Shift">Shift</option>
+                <option value="Ctrl">Ctrl</option>
+                <option value="Super">GUI</option>
+              </select><br><br>
+              Modifier 3:&nbsp;&nbsp;&nbsp;<select class="selectbox" id="modifier3" name="modifier3">
+                <option value=""></option>
+                <option value="Alt">Alt</option>
+                <option value="Shift">Shift</option>
+                <option value="Ctrl">Ctrl</option>
+                <option value="Super">GUI</option>
+              </select><br><br>
+
+              <i>* Listener will be Modifier 1 + Modifier 2 + Modifier 3 + (F1 - F11)</i>
+
+          </form>
+      </div>
+      <div class="cancelbutton" onclick="cancelsettings()">Cancel</div>
+      <div class="savebutton" onclick="savesettings()">Save</div>
+    </div>
+    <script src="settings.js"></script>
+  </body>
+</html>

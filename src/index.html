@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/index.css" rel="stylesheet" />
+    <title>FreeTouchDeck Helper</title>
+  </head>
+  <body>
+    <div class="main_div">
+      <div class="helpers">
+      Helper 1:&nbsp;&nbsp;&nbsp;<input id="helper1" onchange="helperChanged('0', 'helper1')"></input><br>
+      Helper 2:&nbsp;&nbsp;&nbsp;<input id="helper2" onchange="helperChanged('1', 'helper2')"></input><br>
+      Helper 3:&nbsp;&nbsp;&nbsp;<input id="helper3" onchange="helperChanged('2', 'helper3')"></input><br>
+      Helper 4:&nbsp;&nbsp;&nbsp;<input id="helper4" onchange="helperChanged('3', 'helper4')"></input><br>
+      Helper 5:&nbsp;&nbsp;&nbsp;<input id="helper5" onchange="helperChanged('4', 'helper5')"></input><br>
+      Helper 6:&nbsp;&nbsp;&nbsp;<input id="helper6" onchange="helperChanged('5', 'helper6')"></input><br>
+      Helper 7:&nbsp;&nbsp;&nbsp;<input id="helper7" onchange="helperChanged('6', 'helper7')"></input><br>
+      Helper 8:&nbsp;&nbsp;&nbsp;<input id="helper8" onchange="helperChanged('7', 'helper8')"></input><br>
+      Helper 9:&nbsp;&nbsp;&nbsp;<input id="helper9" onchange="helperChanged('8', 'helper9')"></input><br>
+      Helper 10:&nbsp;<input id="helper10" onchange="helperChanged('9', 'helper10')"></input><br>
+      Helper 11:&nbsp;<input id="helper11" onchange="helperChanged('10', 'helper11')"></input><br>
+      <div class="helpershortcut" id="helpershortcut"></div>
+    </div>
+      <div class="output" id="output"></div>
+      <span class="header_output">Output:</span>
+      <span class="header_output_clear"><div style="cursor: pointer;color: rgb(255, 133, 47);font-family: Roboto;font-weight: Regular;" href="" onclick="clearoutput()">[clear]</div></span>
+      <span class="header_commands">Commands:</span>
+      <div class="history" id="history"></div>
+      <div class="empty_div"></div>
+      <span class="header_main">FreeTouchDeck Helper</span
+      ><span class="header_history">History:</span>
+      <span class="header_history_clear"><div style="cursor: pointer; color: rgb(255, 133, 47);font-family: Roboto;font-weight: Regular;" href="" onclick="clearhistory()">[clear]</div></span>
+      <span class="version_nr">v0.0.2</span>
+      <div class="settingsbutton" id="settingsbutton" onclick="opensettings()">Settings</div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

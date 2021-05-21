@@ -1,0 +1,99 @@
+* {
+  overflow-x: hidden;
+  margin: 0px !important;
+}
+.wrapper {
+  width: 550px;
+  height: 550px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.empty_div {
+  width: 550px;
+  height: 34px;
+  background: rgba(7, 165, 199, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.header_settings {
+  width: 74px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  font-family: Roboto;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+
+.cancelbutton {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 120px;
+  top: 484px;
+  font-family: Roboto;
+  text-align: center;
+  padding-top: 8px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: Regular;
+  background: #007c98;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.savebutton {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 290px;
+  top: 484px;
+  font-family: Roboto;
+  text-align: center;
+  padding-top: 8px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: Regular;
+  background: #007c98;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.main {
+  position: absolute;
+  width: 480px;
+  height: 412px;
+  left: 29px;
+  top: 53px;
+  font-family: Roboto;
+  text-align: left;
+  padding-top: 12px;
+  padding-left: 12px;
+  color: rgba(1, 46, 56, 1);
+  font-weight: Regular;
+  background: #ffffff;
+}
+
+.selectbox {
+  width: 100px;
+  height: 30px;
+  font-family: Roboto;
+}
+
+.textheader {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Roboto;
+  text-align: left;
+  color: rgba(1, 46, 56, 1);
+  font-weight: Regular;
+  background: #ffffff;
+}
