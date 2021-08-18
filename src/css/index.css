@@ -192,6 +192,22 @@ a.link:link, a.link:visited, a.link:hover, a.link:active {
   cursor: pointer;
 }
 
+.followerbutton {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 863px;
+  top: 11px;
+  font-family: Roboto;
+  text-align: center;
+  padding-top: 8px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: Regular;
+  background: #007c98;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 .helpershortcut {
   color: rgba(1, 46, 56, 1);
   font-family: Roboto;
@@ -201,4 +217,82 @@ a.link:link, a.link:visited, a.link:hover, a.link:active {
   font-style: italic;
   opacity: 1;
   text-align: left;
+}
+
+ /* The switch - the box around the slider */
+ .switch {
+  position: absolute;
+  left: 780px;
+  top: 18px;
+  display: inline-block;
+  width: 34px;
+  height: 22px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+input:checked + .slider {
+  background-color: #ff8000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ff8000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+
+.followon {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  left: 649px;
+  top: 11px;
+  font-family: Roboto;
+  text-align: center;
+  padding-top: 8px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: Bold;
 }

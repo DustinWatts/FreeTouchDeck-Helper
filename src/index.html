@@ -30,10 +30,16 @@
       <span class="header_commands">Commands:</span>
       <div class="history" id="history"></div>
       <div class="empty_div"></div>
-      <span class="header_main">FreeTouchDeck Helper</span
-      ><span class="header_history">History:</span>
+      <span class="header_main">FreeTouchDeck Helper</span>
+      <span class="header_history">History:</span>
       <span class="header_history_clear"><div style="cursor: pointer; color: rgb(255, 133, 47);font-family: Roboto;font-weight: Regular;" href="" onclick="clearhistory()">[clear]</div></span>
-      <span class="version_nr">v0.0.2</span>
+      <span class="version_nr">v0.0.3</span>
+      <span class="followon">Follow window:</span>
+      <label class="switch">
+        <input type="checkbox" onclick="changefollow()" id="followonoff">
+        <span class="slider round"></span>
+      </label>
+      <div class="followerbutton" id="followerbutton" onclick="openfollower()">Follower</div>
       <div class="settingsbutton" id="settingsbutton" onclick="opensettings()">Settings</div>
     </div>
     <script src="index.js"></script>

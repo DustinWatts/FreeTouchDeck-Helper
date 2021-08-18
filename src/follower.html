@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/follower.css" rel="stylesheet" />
+    <title>Settings</title>
+  </head>
+  <body>
+
+    <div class="wrapper">
+        <div class="empty_div"></div>
+      <span class="header_follower">Active Window Follower</span>
+
+      <div class="main">
+
+        <label for="windows">Menu1 follows --> </label><select name="menu1follow" id="menu1follow"></select><br>
+        <label for="windows">Menu2 follows --> </label><select name="menu2follow" id="menu2follow"></select><br>
+        <label for="windows">Menu3 follows --> </label><select name="menu3follow" id="menu3follow"></select><br>
+        <label for="windows">Menu4 follows --> </label><select name="menu4follow" id="menu4follow"></select><br>
+        <label for="windows">Menu5 follows --> </label><select name="menu5follow" id="menu5follow"></select><br><br>
+
+        <label for="ports">FTD is on port --> </label><select name="ports" id="ports"></select><br><br>
+        <label for="followstart">Start following on launch?&nbsp;&nbsp;&nbsp;</label><input type="checkbox" name="followstart" id="followstart"></input><br><br>
+
+        <b>Usage:</b><br><br>
+
+        First, use "Start Capture" to create a list of windows that are in focus. When you switch to a window/app <br>
+        it will be added to the list. Click "Stop Capture" to fill the lists of windows/apps. Next, select what<br>
+        window/app each menu will follow. <br><br>
+        
+        Make sure to select the serial port that FreeTouchDeck is on.<br><br>
+        
+        When done click save. <br><br>
+
+        
+
+        </div>
+
+      <div id="capturebutton" class="followerbutton" onclick="startcapture()">Start Capture</div>
+      <div class="cancelbutton" onclick="cancelfollower()">Cancel</div>
+      <div class="savebutton" onclick="savefollower()">Save</div>
+
+      <div id="iscapturing" class="iscapturing"Save">Capturing windows/apps</div>
+
+
+
+    </div>
+
+    <script src="follower.js"></script>
+  </body>
+  </html>

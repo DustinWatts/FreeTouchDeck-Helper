@@ -43,6 +43,10 @@ function opensettings() {
   ipc.send('opensettings', '');
 }
 
+function openfollower() {
+  ipc.send('openfollower', '');
+}
+
 function clearhistory() {
   document.getElementById('history').innerHTML = '';
 }
@@ -72,5 +76,27 @@ function formattedtime(){
 
 }
 
+function changefollow(){
+
+  var followonoff = document.getElementById('followonoff');
+  if (followonoff.checked != true)
+  {
+    ipc.send('start-follow');
+  }else{
+    ipc.send('stop-follow');
+  }
+
+}
+
 // Let our main process know index.js is completely loaded
 ipc.send('did-finish-load');
+
+ipcRenderer.on('setcheckbox', (event, check) => {
+
+if(check){
+
+  document.getElementById("followonoff").checked = true;
+
+}
+
+});
