@@ -207,11 +207,12 @@ ipc.on('settingsloaddone', function (event) {
     'fill-settings',
     modifiers[0],
     modifiers[1],
-    modifiers[2]
+    modifiers[2],
+    minimizeOnStartup
   );
 });
 
-ipc.on('savesettings', function (event, modifier1, modifier2, modifier3) {
+ipc.on('savesettings', function (event, modifier1, modifier2, modifier3, minimize) {
   storage.set(
     'settings',
     {
@@ -234,6 +235,15 @@ ipc.on('savesettings', function (event, modifier1, modifier2, modifier3) {
   }
   helpersare += `F1 - F11`;
   win.webContents.send('update-helpershortcut', helpersare);
+
+  storage.set(
+    'general',
+    {
+      minimizeOnStart: minimize,
+    },
+    function (error) {}
+  );
+  minimizeOnStartup = minimize;
 });
 
 ipc.on('cancelsettings', function (event) {

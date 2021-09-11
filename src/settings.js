@@ -4,10 +4,15 @@ var ipc = require('electron').ipcRenderer;
 
 /* Our child process listens to the 'fill-settings' channel.
 */
-ipcRenderer.on('fill-settings', (event, modifier1, modifier2, modifier3) => {
+ipcRenderer.on('fill-settings', (event, modifier1, modifier2, modifier3, minimizeOnStartup) => {
   document.getElementById('modifier1').value = modifier1;
   document.getElementById('modifier2').value = modifier2;
   document.getElementById('modifier3').value = modifier3;
+  if(minimizeOnStartup){
+
+    document.getElementById('minimize').checked = true;
+
+  }
 });
 
 /* When the save settings button is clicked, we send the current values to
@@ -17,7 +22,8 @@ function savesettings() {
     ipc.send('savesettings', 
         document.getElementById('modifier1').value, 
         document.getElementById('modifier2').value,
-        document.getElementById('modifier3').value
+        document.getElementById('modifier3').value,
+        document.getElementById('minimize').checked
     );
   }
 
