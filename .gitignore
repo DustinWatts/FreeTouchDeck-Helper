@@ -27,3 +27,4 @@ assets/icons/linux/.DS_Store
 assets/icons/mac/.DS_Store
 src/.DS_Store
 .DS_Store
+*.json
