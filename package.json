@@ -22,7 +22,7 @@
     "serialport": "^9.2.0"
   },
   "devDependencies": {
-    "electron": "^39.8.10",
+    "electron": "^41.10.6",
     "electron-json-storage": "^4.3.0",
     "electron-packager": "^17.1.2",
     "electron-rebuild": "^3.2.9"
